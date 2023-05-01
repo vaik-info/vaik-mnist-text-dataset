@@ -45,8 +45,8 @@ def main():
     parser.add_argument('--output_file_path', type=str, default='~/.vaik-mnist-text-dataset/dataset/mnist.txt')
     parser.add_argument('--train_sample_num', type=int, default=10000)
     parser.add_argument('--test_sample_num', type=int, default=100)
-    parser.add_argument('--image_max_size', type=int, default=28)
-    parser.add_argument('--image_min_size', type=int, default=28)
+    parser.add_argument('--image_max_size', type=int, default=14)
+    parser.add_argument('--image_min_size', type=int, default=14)
     args = parser.parse_args()
 
     args.output_file_path = os.path.expanduser(args.output_file_path)
